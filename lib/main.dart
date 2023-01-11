@@ -22,25 +22,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green[600],
         centerTitle: true,
       ),
-      body: Center(
-        /**
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.green[700],
-          size: 70.0,
-        ),
-         **/
-        child: ElevatedButton( //or TextButton, OutlinedButton
-          style: ElevatedButton.styleFrom(
-            primary: Colors.green, // background
-            onPrimary: Colors.white, // foreground
-          ),
-          onPressed: () { print("You clicked me"); },
-          child: Text('Click me'),
-          // child: Icon(Icons.mail),
-          )
 
+      /**
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+        child: Text("Hello"),
       ),
+       **/
+
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+        margin: EdgeInsets.all(10.0),
+        color: Colors.grey[300],
+        child: Text("Hello"),
+      ),
+
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
         child: Text("Click"),
