@@ -23,46 +23,40 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body: Column(
+      body: Row(
         mainAxisAlignment: MainAxisAlignment.center, //i.e. Horizontal alignment. but in the opposite direction
-        crossAxisAlignment: CrossAxisAlignment.stretch, //i.e. Vertical alignment. but in the opposite direction
+        crossAxisAlignment: CrossAxisAlignment.center, //i.e. Vertical alignment. but in the opposite direction
         children: <Widget>[
-          Container(
-            padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
-            child: Text("Hello"),
-            color: Colors.green[200],
+          Expanded(
+              flex: 4, //ratio
+              child: Image.asset("assets/image1.jpg")
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
-            child: ElevatedButton(
-                onPressed: () {},
-                child: Text("Button"),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.red,
-                  backgroundColor: Colors.indigo,
-                ),
+          Expanded(
+            flex: 4, //ratio
+            child: Container(
+              padding: EdgeInsets.all(5.0),
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 3.0),
+              child: Text("One"),
+              color: Colors.green[200],
             ),
-            color: Colors.yellow[200],
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
-            child: Icon(
-              Icons.mail
+          Expanded(
+            flex: 4, //ratio
+            child: Container(
+              padding: EdgeInsets.all(5.0),
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 3.0),
+              child: Text("Two"),
+              color: Colors.green[200],
             ),
-            color: Colors.green[200],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Text("Hello "),
-              Text("World "),
-              Text("Its "),
-              Text("Wainaina "),
-            ],
+          Expanded(
+            flex: 2, //ratio
+            child: Container(
+              padding: EdgeInsets.all(5.0),
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 3.0),
+              child: Text("Three"),
+              color: Colors.green[200],
+            ),
           ),
         ],
       ),
