@@ -24,20 +24,21 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         /**
-        child: Image(
-          //1.using image url from internet
-          //image: NetworkImage("https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&w=400"),
-          
-          //2. Using local Image Asset
-          //image: AssetImage("assets/image2.jpg"),
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.green[700],
+          size: 70.0,
         ),
-         */
-
-        //1.using image url from internet
-        child: Image.network("https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&w=400"),
-
-        //2. Using local Image Asset
-        //child: Image.asset("assets/image2.jpg"),
+         **/
+        child: ElevatedButton( //or TextButton, OutlinedButton
+          style: ElevatedButton.styleFrom(
+            primary: Colors.green, // background
+            onPrimary: Colors.white, // foreground
+          ),
+          onPressed: () { print("You clicked me"); },
+          child: Text('Click me'),
+          // child: Icon(Icons.mail),
+          )
 
       ),
       floatingActionButton: FloatingActionButton(
