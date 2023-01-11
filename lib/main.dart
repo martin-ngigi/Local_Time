@@ -23,16 +23,22 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          "Hello and welcome. ;-)",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: "IndieFlower",
-          ),
+        /**
+        child: Image(
+          //1.using image url from internet
+          //image: NetworkImage("https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&w=400"),
+          
+          //2. Using local Image Asset
+          //image: AssetImage("assets/image2.jpg"),
         ),
+         */
+
+        //1.using image url from internet
+        child: Image.network("https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&w=400"),
+
+        //2. Using local Image Asset
+        //child: Image.asset("assets/image2.jpg"),
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
