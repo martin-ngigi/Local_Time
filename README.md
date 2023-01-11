@@ -1,7 +1,8 @@
 # local_time
 
 A new Flutter project.
-
+Youtube link -> https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=1&ab_channel=TheNetNinja
+Github link -> https://github.com/iamshaunjp/flutter-beginners-tutorial/
 ## Getting Started
 
 This project is a starting point for a Flutter application.
