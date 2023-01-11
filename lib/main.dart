@@ -23,24 +23,46 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, //i.e. horizontal axis.
-        crossAxisAlignment: CrossAxisAlignment.stretch, //i.e. vertical axis.
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center, //i.e. Horizontal alignment. but in the opposite direction
+        crossAxisAlignment: CrossAxisAlignment.stretch, //i.e. Vertical alignment. but in the opposite direction
         children: <Widget>[
-          Text("Hello world"),
-          ElevatedButton(
-              onPressed: () {},
-              child: Text("Button Elevated."),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.grey,
-                backgroundColor: Colors.blue[300]
-              ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
+            child: Text("Hello"),
+            color: Colors.green[200],
           ),
           Container(
-            color: Colors.green[600],
-            padding: EdgeInsets.all(30.0),
-            margin: EdgeInsets.all(5.0),
-            child: Text("Inside container"),
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
+            child: ElevatedButton(
+                onPressed: () {},
+                child: Text("Button"),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red,
+                  backgroundColor: Colors.indigo,
+                ),
+            ),
+            color: Colors.yellow[200],
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10),
+            child: Icon(
+              Icons.mail
+            ),
+            color: Colors.green[200],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text("Hello "),
+              Text("World "),
+              Text("Its "),
+              Text("Wainaina "),
+            ],
           ),
         ],
       ),
