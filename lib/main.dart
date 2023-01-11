@@ -23,20 +23,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
 
-      /**
-      body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-        child: Text("Hello"),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly, //i.e. horizontal axis.
+        crossAxisAlignment: CrossAxisAlignment.stretch, //i.e. vertical axis.
+        children: <Widget>[
+          Text("Hello world"),
+          ElevatedButton(
+              onPressed: () {},
+              child: Text("Button Elevated."),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey,
+                backgroundColor: Colors.blue[300]
+              ),
+          ),
+          Container(
+            color: Colors.green[600],
+            padding: EdgeInsets.all(30.0),
+            margin: EdgeInsets.all(5.0),
+            child: Text("Inside container"),
+          ),
+        ],
       ),
-       **/
-
-      body: Container(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-        margin: EdgeInsets.all(10.0),
-        color: Colors.grey[300],
-        child: Text("Hello"),
-      ),
-
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
